@@ -21,19 +21,24 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import dagger.hilt.android.AndroidEntryPoint
+import androidx.compose.material3.Text
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import com.example.android.architecture.blueprints.todoapp.ui.theme.TodoAppTheme
 
 /**
  * Main activity for the todoapp
  */
 @AndroidEntryPoint
 class TodoActivity : ComponentActivity() {
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
-            TodoTheme {
-                TodoNavGraph()
+            TodoAppTheme {
+                // A surface container using the 'background' color from the theme
+                Surface(color = MaterialTheme.colorScheme.background) {
+                    Text(text = "Hello Ivan")
+                }
             }
         }
     }
