@@ -1,11 +1,11 @@
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.activity.viewModels
+import com.example.android.architecture.blueprints.todoapp.helloworld.HelloWorldScreen
 
 class TodoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent { SimpleHelloWorld() }
+        setContent { HelloWorldScreen() }
     }
 }
