@@ -1,7 +1,11 @@
-# Hello World Example
+# Todo App
 
-This project now includes a simple Hello World example using Jetpack Compose. 
+## Features
 
-## Running the Example
+- Hello World Screen: Access it by navigating to the hello_world route.
 
-To run the Hello World example, simply launch the app, and you will see "Hello, World!" displayed on the screen.
+### How to Access the Hello World Screen
+
+To access the Hello World screen, navigate to the hello_world route in the app to see the message displayed: "Hello, World!".
+
+This is a simple example of a screen in the application demonstrating the usage of Jetpack Compose for UI components.
