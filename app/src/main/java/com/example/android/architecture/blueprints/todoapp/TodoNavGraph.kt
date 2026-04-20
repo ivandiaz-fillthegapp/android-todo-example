@@ -1,7 +1,7 @@
 // Import necessary components for navigation
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
-import com.example.android.architecture.blueprints.todoapp.hello.HelloWorldScreen
+import com.example.android.architecture.blueprints.todoapp.HelloWorldScreen
 
 fun NavGraphBuilder.todoNavGraph() {
     // Add the new Hello World screen to the navigation graph
