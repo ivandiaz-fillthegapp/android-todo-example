@@ -1,9 +1,13 @@
-// Import necessary components for navigation
-import androidx.navigation.NavGraphBuilder
-import androidx.navigation.compose.composable
-import com.example.android.architecture.blueprints.todoapp.hello.HelloWorldScreen
+package com.example.android.architecture.blueprints.todoapp
 
-fun NavGraphBuilder.todoNavGraph() {
-    // Add the new Hello World screen to the navigation graph
-    composable("hello_world") { HelloWorldScreen() }
+import androidx.navigation.NavController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+
+@Composable
+fun TodoNavGraph(navController: NavController) {
+    NavHost(navController, startDestination = "helloWorld") {
+        composable("helloWorld") { HelloWorldScreen() }
+        // ... other destinations
+    }
 }
