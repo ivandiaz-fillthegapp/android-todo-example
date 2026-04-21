@@ -1,7 +1,8 @@
-# Hello World Example
+# Todo App
 
-This project now includes a simple Hello World example using Jetpack Compose. 
+## New Feature: Hello World
 
-## Running the Example
+### Usage
+This feature displays a simple 'Hello, World!' message using Jetpack Compose.
 
-To run the Hello World example, simply launch the app, and you will see "Hello, World!" displayed on the screen.
+You can navigate to this screen from the main application.
