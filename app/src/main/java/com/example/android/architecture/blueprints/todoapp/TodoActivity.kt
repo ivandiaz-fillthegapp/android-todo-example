@@ -1,11 +1,17 @@
+// Other imports
+import com.example.android.architecture.blueprints.todoapp.HelloWorldScreen
+import androidx.compose.material.Scaffold
+import androidx.compose.runtime.Composable
 import androidx.activity.compose.setContent
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import androidx.activity.viewModels
 
-class TodoActivity : AppCompatActivity() {
+class TodoActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent { SimpleHelloWorld() }
+
+        setContent { 
+            Scaffold {
+                HelloWorldScreen()
+            }
+        }
     }
 }
