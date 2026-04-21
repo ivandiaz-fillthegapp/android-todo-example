@@ -1,7 +1,7 @@
-# Hello World Example
+# Android Todo Example
 
-This project now includes a simple Hello World example using Jetpack Compose. 
+This is a sample Android application demonstrating the use of Jetpack Compose.
 
-## Running the Example
+## New Feature: Hello World Screen
 
-To run the Hello World example, simply launch the app, and you will see "Hello, World!" displayed on the screen.
+A new feature has been added to display a 'Hello World' message using Jetpack Compose. This screen is integrated into the main activity and showcases the basic functionality of Compose.
