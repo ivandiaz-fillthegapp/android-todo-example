@@ -1,7 +1,10 @@
-# Hello World Example
+## Hello World Feature
 
-This project now includes a simple Hello World example using Jetpack Compose. 
+This feature introduces a new Hello World screen that displays a simple message. 
 
-## Running the Example
+### How to Access
+You can navigate to the Hello World screen by following the navigation link in the app.
 
-To run the Hello World example, simply launch the app, and you will see "Hello, World!" displayed on the screen.
+### Details
+- The screen uses Jetpack Compose to render the UI.
+- The feature includes automated tests to ensure it works properly.
