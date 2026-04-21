@@ -1,8 +1,9 @@
 package com.example.android.architecture.blueprints.todoapp
 
-import androidx.navigation.NavGraphBuilder
+import androidx.navigation.NavGraph
 import androidx.navigation.compose.composable
+import androidx.navigation.NavHostController
 
-fun NavGraphBuilder.todoNavGraph() {
-    composable(route = "hello") { HelloWorldScreen() }
+fun NavGraph.addHelloWorldScreen(navController: NavHostController) {
+    composable("helloWorld") { HelloWorldScreen() }
 }
