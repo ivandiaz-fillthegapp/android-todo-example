@@ -1,6 +1,9 @@
-# Hello World Feature
+# Todo App
 
-This feature adds a simple Hello World screen using Jetpack Compose. The screen displays the text 'Hello, World!'.
+## Hello World Feature
 
-## How to Use
-When the app launches, the Hello World screen will be displayed as the initial screen.
+This feature implements a simple Hello World screen using Jetpack Compose. When the app is launched, the user will be greeted with 'Hello World'.
+
+### How to Test
+- Run the app on an Android device or emulator.
+- Verify that the 'Hello World' message is displayed on the main screen.
