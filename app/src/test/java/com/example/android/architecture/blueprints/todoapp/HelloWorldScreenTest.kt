@@ -1,19 +1,27 @@
+package com.example.android.architecture.blueprints.todoapp
+
+import androidx.compose.material.ContentAlpha
+import androidx.compose.material.MaterialTheme
 import androidx.compose.ui.test.junit4.createComposeRule
-import androidx.compose.ui.test.junit4.ComposeTestRule
 import androidx.compose.ui.test.onNodeWithText
+import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.assertIsDisplayed
-import androidx.compose.ui.test.junit4.ComposeContentTest
 import org.junit.Rule
 import org.junit.Test
 
 class HelloWorldScreenTest {
-    @get:Rule val composeTestRule = createComposeRule()
+    @get:Rule
+    val composeTestRule = createComposeRule()
 
     @Test
     fun helloWorldScreen_displaysHelloWorld() {
         composeTestRule.setContent { 
-            HelloWorldScreen() 
+            MaterialTheme { 
+                HelloWorldScreen()
+            } 
         }
-        composeTestRule.onNodeWithText("Hello World").assertIsDisplayed()
+        // Verify that the text 'Hello World' is displayed
+        composeTestRule.onNodeWithText("Hello World", useUnmergedTree = true)
+            .assertIsDisplayed()
     }
 }
